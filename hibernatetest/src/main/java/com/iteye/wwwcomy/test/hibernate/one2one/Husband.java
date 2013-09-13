@@ -32,7 +32,7 @@ public class Husband {
 	}
 
 	@OneToOne
-	@JoinColumn(name="wife1ID")
+	@JoinColumn(name="wifeID")
 	public Wife getWife() {
 		return wife;
 	}
