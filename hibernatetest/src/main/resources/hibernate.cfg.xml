@@ -34,17 +34,23 @@
 		<!-- Drop and re-create the database schema on startup -->
 			<property name="hbm2ddl.auto">update</property>
 		<property name="hbm2ddl.auto">create</property>
-
+<!-- 
 		<mapping resource="com/iteye/wwwcomy/model/Student.hbm.xml"/>
 		<mapping resource="com/iteye/wwwcomy/model/StudentIdcard.hbm.xml"/>
 		<mapping class="com.iteye.wwwcomy.model.Teacher"/>
-		<!--  
+		 
 		<mapping class="com.iteye.wwwcomy.test.hibernate.one2one.Husband"/>
 		<mapping class="com.iteye.wwwcomy.test.hibernate.one2one.Wife"/>
 		-->
-		<!-- -->
+		<!-- 
 		<mapping class="com.iteye.wwwcomy.test.hibernate.comp.Husband"/>
-		
+		-->
+		<!-- 
+		<mapping class="com.iteye.wwwcomy.test.hibernate.many2one.Group"/>
+		<mapping class="com.iteye.wwwcomy.test.hibernate.many2one.User"/>
+		 -->
+		<mapping class="com.iteye.wwwcomy.test.hibernate.one2many.Group"/>
+		<mapping class="com.iteye.wwwcomy.test.hibernate.one2many.User"/>
 		
 	</session-factory>
 
