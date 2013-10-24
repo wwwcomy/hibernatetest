@@ -30,16 +30,22 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		
-		<property name="hbm2ddl.auto">create</property>
 
 		<!-- Drop and re-create the database schema on startup -->
 			<property name="hbm2ddl.auto">update</property>
+		<property name="hbm2ddl.auto">create</property>
 
 		<mapping resource="com/iteye/wwwcomy/model/Student.hbm.xml"/>
 		<mapping resource="com/iteye/wwwcomy/model/StudentIdcard.hbm.xml"/>
 		<mapping class="com.iteye.wwwcomy.model.Teacher"/>
+		<!--  
 		<mapping class="com.iteye.wwwcomy.test.hibernate.one2one.Husband"/>
 		<mapping class="com.iteye.wwwcomy.test.hibernate.one2one.Wife"/>
+		-->
+		<!-- -->
+		<mapping class="com.iteye.wwwcomy.test.hibernate.comp.Husband"/>
+		
+		
 	</session-factory>
 
 </hibernate-configuration>
