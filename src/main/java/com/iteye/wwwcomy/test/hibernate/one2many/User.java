@@ -1,7 +1,6 @@
 package com.iteye.wwwcomy.test.hibernate.one2many;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,8 +10,15 @@ public class User {
 	private int id;
 	private String name;
 
+	public User() {
+	}
+
+	public User(int id, String string) {
+		this.id = id;
+		this.name = string;
+	}
+
 	@Id
-	@GeneratedValue
 	public int getId() {
 		return id;
 	}
@@ -27,5 +33,10 @@ public class User {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "user_id:" + id + ",name:" + name;
 	}
 }

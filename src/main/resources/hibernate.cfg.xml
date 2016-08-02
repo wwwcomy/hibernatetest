@@ -48,11 +48,11 @@
 		<!-- 
 		<mapping class="com.iteye.wwwcomy.test.hibernate.many2one.Group"/>
 		<mapping class="com.iteye.wwwcomy.test.hibernate.many2one.User"/>
-		<mapping class="com.iteye.wwwcomy.test.hibernate.one2many.Group"/>
-		<mapping class="com.iteye.wwwcomy.test.hibernate.one2many.User"/>
-		 -->
 		<mapping class="com.iteye.wwwcomy.test.hibernate.many2many.Group"/>
 		<mapping class="com.iteye.wwwcomy.test.hibernate.many2many.User"/>
+		 -->
+		<mapping class="com.iteye.wwwcomy.test.hibernate.one2many.Group"/>
+		<mapping class="com.iteye.wwwcomy.test.hibernate.one2many.User"/>
 	</session-factory>
 
 </hibernate-configuration>
